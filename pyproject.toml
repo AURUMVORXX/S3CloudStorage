@@ -4,4 +4,8 @@ version = "1.0.0"
 description = "Python app that utilizes S3 as cloud file storage"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "fastapi>=0.116.1",
+    "loguru>=0.7.3",
+    "uvicorn>=0.35.0",
+]
