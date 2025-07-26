@@ -6,6 +6,7 @@ class APIService:
 
     def __init__(self):
         self._app = FastAPI()
+        self._register_routers()
 
     async def serve(self):
         '''
@@ -20,4 +21,11 @@ class APIService:
         server = uvicorn.Server(config)
         logger.info('API сервис успешно запущен')
         await server.serve()
+
+    def _register_routers(self):
+        from api.v1.ping import router as ping_router
+
+        self._app.include_router(ping_router)
+    
+
         
