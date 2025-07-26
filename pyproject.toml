@@ -1,0 +1,7 @@
+[project]
+name = "S3CloudStorage"
+version = "1.0.0"
+description = "Python app that utilizes S3 as cloud file storage"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
